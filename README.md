@@ -1,14 +1,85 @@
-# java-project ecommerence
-1)Clone the repository
-2)Open the project in your IDE: IntelliJ IDEA (recommended) or Eclipse
-3)If you are using IntelliJ IDEA, make sure the IDE opens project as Maven and recognizes the project as a Spring Boot project. Also, you must change the working directory of the project so that the views (the actual web pages to be shown) are found by Spring Boot (check out Web Directories IntelliJ IDEA.
-4)Make sure you are in the JtProject directory
-5)Configure the database connection in application.properties file (check the Database section below for more info)
-6)Run the project (by running the main method in JtSpringProjectApplication.java)
-7)Open http://localhost:8080/ in your browser!
-8)If you ran the basedata.sqlscript on the database, you can log in with the following credentials as admin; otherwise you'll have to manually create an admin user in the database:
-Username: admin
-Password: 123
-9)Log in as a normal user:
-Username: lisa
-Password: 765
+
+# 🛍️ Java E-Commerce Project
+
+A simple e-commerce web application built using **Java Spring Boot** and **Maven**.
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to set up and run the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Nakkkkkul0130/javaproject/jtproject
+```
+
+### 2. Open in Your IDE
+- **Recommended**: Use **IntelliJ IDEA** or **Eclipse**
+- If you're using **IntelliJ IDEA**:
+  - Open the project as a **Maven Project**
+  - Ensure the project is recognized as a **Spring Boot** project
+  - Set the correct **working directory** so that Spring Boot can locate the `views/` folder correctly  
+    *(Check: File > Project Structure > Modules > Paths > Working Directory)*
+
+### 3. Navigate to the Project Directory
+```bash
+cd JtProject
+```
+
+### 4. Configure the Database
+Update the `application.properties` file located in:
+```
+src/main/resources/application.properties
+```
+Example:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+```
+
+### 5. Run the Application
+Open and run the main class:
+
+```
+src/main/java/com/jtspringproject/JtSpringProject/JtSpringProjectApplication.java
+```
+
+### 6. Access the Application
+Open your browser and visit:
+```
+http://localhost:8080/
+```
+
+---
+
+## 🔐 Login Credentials
+
+### Admin User
+> *(Only available if you ran `basedata.sql` on your MySQL database)*  
+- **Username**: `admin`  
+- **Password**: `123`
+
+### Normal User
+- **Username**: `lisa`  
+- **Password**: `765`
+
+---
+
+---
+
+## 🛠 Tech Stack
+- Java 8+
+- Spring Boot
+- Maven
+- MySQL
+- Thymeleaf
+- HTML/CSS/JS
+
+---
+
+## 📌 Notes
+- Ensure MySQL is running before launching the app.
+- If you're using a custom database, you must create an admin user manually unless `basedata.sql` is executed.
