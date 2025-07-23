@@ -11,7 +11,7 @@ Follow the steps below to set up and run the project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Nakkkkkul0130/javaproject/jtproject
+git clone https://github.com/Nakkkkkul0130/java-project/JtProject
 ```
 
 ### 2. Open in Your IDE
