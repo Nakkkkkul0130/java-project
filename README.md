@@ -75,7 +75,6 @@ http://localhost:8080/
 - Spring Boot
 - Maven
 - MySQL
-- Thymeleaf
 - HTML/CSS/JS
 
 ---
